@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-const API_URI = `${import.meta.env.VITE_SERVER_URL.replace(
-	/\/$/,
-	""
-)}/api/classes`; // Update the API endpoint for classes
-const TEACHER_API_URI = `${import.meta.env.VITE_SERVER_URL.replace(
-	/\/$/,
-	""
-)}/api/teachers`; // Endpoint to fetch teachers
+const API_URI = "/api/classes"; // Update the API endpoint for classes
+const TEACHER_API_URI = "/api/teachers"; // Endpoint to fetch teachers
 
 const ClassPage = () => {
 	const [classes, setClasses] = useState([]);

@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const CLASS_API_URI = `${import.meta.env.VITE_SERVER_URL.replace(
-	/\/$/,
-	""
-)}/api/classes`;
+const CLASS_API_URI = "/api/classes";
 
-const EXAM_API_URI = `${import.meta.env.VITE_SERVER_URL.replace(
-	/\/$/,
-	""
-)}/api/exams`;
+const EXAM_API_URI = "/api/exams";
 
 const ExamPage = () => {
 	const [classes, setClasses] = useState([]);

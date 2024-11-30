@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 // Set the API base URI
-const API_URI = `${import.meta.env.VITE_SERVER_URL.replace(
-	/\/$/,
-	""
-)}/api/teachers`;
+const API_URI = "/api/teachers";
 
 
 const TeacherPage = () => {

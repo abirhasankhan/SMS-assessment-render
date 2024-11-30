@@ -1,7 +1,7 @@
 import {create} from 'zustand'
 import axios from 'axios'
 
-const API_URI = `/api/auth`;
+const API_URI = "/api/auth";
 
 
 axios.defaults.withCredentials = true
